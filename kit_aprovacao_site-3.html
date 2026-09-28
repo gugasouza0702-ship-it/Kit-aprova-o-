@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit Aprovação — 9º Ano</title>
+<style>
+:root{
+  --bg:#f7f8fc; --surface:#fff; --text:#121629; --muted:#626a80;
+  --primary:#635bff; --primary2:#8b5cf6; --line:#e8eaf2; --dark:#171a2b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1100px;margin:auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;font-size:20px}.logo span{color:var(--primary)}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px}
+.btn{display:inline-block;background:var(--primary);color:white;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:700;border:0;cursor:pointer;box-shadow:0 8px 22px #635bff25}
+.hero{padding:70px 0 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:#eeecff;color:#5148d9;padding:7px 11px;border-radius:999px;font-weight:700;font-size:13px}
+h1{font-size:clamp(42px,6vw,68px);line-height:1.02;margin:18px 0}
+h1 span{color:var(--primary)}
+.lead{font-size:19px;color:var(--muted);max-width:600px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 20px 60px #15182b12}
+.mock{background:linear-gradient(145deg,#171a2b,#2b2751);color:#fff;min-height:360px;display:flex;flex-direction:column;justify-content:space-between}
+.mock .cover{font-size:32px;font-weight:850;max-width:300px}.mock small{color:#c8c9d8}
+.price{font-size:40px;font-weight:850;margin:10px 0}.old{text-decoration:line-through;color:#9da2b3;font-size:15px}
+section{padding:65px 0} .center{text-align:center}
+h2{font-size:36px;margin:0 0 12px}.sub{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.icon{font-size:28px}.item h3{margin:12px 0 6px}.item p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}
+ul{padding-left:20px;color:var(--muted)} li{margin:10px 0}
+.cta{background:var(--dark);color:#fff;border-radius:28px;padding:55px;text-align:center}.cta p{color:#c8c9d8}
+footer{padding:35px 0;color:var(--muted);font-size:13px;text-align:center}
+.modal{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{max-width:480px;width:100%;background:#fff;border-radius:22px;padding:28px}.close{float:right;border:0;background:none;font-size:24px;cursor:pointer}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.grid,.features{grid-template-columns:1fr}nav .links{display:none}.cta{padding:35px 22px}}
+</style>
+</head>
+<body>
+<header class="container">
+<nav>
+<div class="logo">Kit <span>Aprovação</span></div>
+<div class="links"><a href="#conteudo">Conteúdo</a><a href="#bonus">Bônus</a><a href="#comprar">Comprar</a></div>
+</nav>
+</header>
+
+<main>
+<section class="container hero">
+<div>
+<span class="badge">MATERIAL DIGITAL • 9º ANO</span>
+<h1>Estude melhor.<br><span>Revise mais rápido.</span></h1>
+<p class="lead">Um material digital organizado para ajudar estudantes do 9º ano a revisar os principais conteúdos antes das provas.</p>
+<br>
+<a class="btn" href="#comprar">Quero conhecer o material →</a>
+</div>
+<div class="card mock">
+<div>
+<small>KIT APROVAÇÃO</small>
+<div class="cover">9º ANO<br>Resumos + exercícios + mapas mentais</div>
+</div>
+<div>
+<div class="old">De R$ 24,90</div>
+<div class="price">R$ 14,90</div>
+<small>Acesso digital</small>
+</div>
+</div>
+</section>
+
+<section id="conteudo" class="container">
+<div class="center"><h2>O que você recebe</h2><p class="sub">Tudo reunido em um só lugar para facilitar sua revisão.</p></div>
+<div class="grid">
+<div class="item"><div class="icon">📚</div><h3>Resumos</h3><p>Conteúdos organizados e explicados de forma simples.</p></div>
+<div class="item"><div class="icon">🧠</div><h3>Mapas mentais</h3><p>Materiais visuais para revisar os pontos principais.</p></div>
+<div class="item"><div class="icon">✏️</div><h3>Questões</h3><p>Exercícios para testar o que você aprendeu.</p></div>
+</div>
+</section>
+
+<section id="bonus" class="container">
+<div class="card features">
+<div><h2>Bônus incluídos 🎁</h2><p class="sub">Materiais extras para deixar sua revisão mais organizada.</p></div>
+<ul>
+<li>Checklist de estudos</li><li>Cronograma de revisão de 7 dias</li><li>Questões extras</li><li>Gabarito das questões</li><li>Materiais para revisão rápida</li>
+</ul>
+</div>
+</section>
+
+<section id="comprar" class="container">
+<div class="cta">
+<h2>Comece sua revisão hoje.</h2>
+<p>Material digital para estudar pelo celular, tablet ou computador.</p>
+<div class="price">R$ 14,90</div>
+<button class="btn" onclick="openModal()">Comprar agora</button>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Kit Aprovação • Material digital autoral</footer>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<button class="close" onclick="closeModal()">×</button>
+<h2>Finalizar compra</h2>
+<p class="sub">Este botão é um espaço reservado para o seu checkout da Kiwify.</p>
+<a class="btn" style="width:100%;text-align:center" href="#" onclick="alert('Substitua este link pelo checkout da Kiwify.');return false;">Ir para o checkout</a>
+</div>
+</div>
+<script>
+function openModal(){document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()})
+</script>
+</body>
+</html>
